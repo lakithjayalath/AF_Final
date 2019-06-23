@@ -116,7 +116,6 @@ export default class addLecturer extends Component {
                         required
                     />
                     <br/>
-
                     <label><b>Qualifications</b></label>
                     <textarea
                         placeholder="Enter Contact Number"

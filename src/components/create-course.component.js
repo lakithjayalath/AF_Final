@@ -65,7 +65,7 @@ export default class CreateCourse extends Component {
                 });
             }
             else {
-                
+
             }
             console.log(semOne);
         }

@@ -38,7 +38,6 @@ courseRoutes.route('/updateCourse/:id').post((req,res) => {
             res.status(404).send("data is not found");
         }
         else {
-            course.courseId = req.body.courseId;
             course.courseName = req.body.courseName;
             course.courseHead = req.body.courseHead;
             course.courseDuration = req.body.courseDuration;
@@ -52,5 +51,7 @@ courseRoutes.route('/updateCourse/:id').post((req,res) => {
             });
     });
 });
+
+
 
 module.exports = courseRoutes;
