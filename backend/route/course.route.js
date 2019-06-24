@@ -52,6 +52,4 @@ courseRoutes.route('/updateCourse/:id').post((req,res) => {
     });
 });
 
-
-
 module.exports = courseRoutes;

@@ -2,13 +2,13 @@ const express = require('express');
 const instructorRoutes = express.Router();
 const Instructor = require('../model/instructor');
 
-instructorRoutes.route('/getInstructor').get((req,res) => {
+instructorRoutes.route('/getInstructors').get((req,res) => {
     Instructor.find((err, instructors) => {
         if(err) {
             console.log(err);
         }
         else {
-            res.json(instructors);
+            res.json({instructors : instructors});
         }
     });
 });

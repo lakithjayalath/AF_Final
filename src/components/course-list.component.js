@@ -20,6 +20,13 @@ export default class CourseList extends Component {
         super(props);
 
         this.state = {courses : []}
+        // this.state = {
+        //     id: '',
+        //     name: '',
+        //     lecturer: '',
+        //     duration: '',
+        //     subjectsOne: ''
+        // }
     }
 
     componentDidMount() {
@@ -54,7 +61,7 @@ export default class CourseList extends Component {
                     </tr>
                     </thead>
                     <tbody>
-                    {this.courseList()}
+                        {this.courseList()}
                     </tbody>
                 </table>
             </div>

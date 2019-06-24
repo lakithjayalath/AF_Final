@@ -68,7 +68,7 @@ export default class EditCourse extends Component {
 
     onChangeSubjectOne(e) {
         this.setState({
-            semOneSubjects: []
+            semOneSubjects: [this.state.semOneSubjects]
         })
     }
 

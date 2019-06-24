@@ -9,6 +9,7 @@ import CourseList from "./components/course-list.component";
 import EditCourse from "./components/edit-course.component";
 import AddInstructor from "./components/add-instructor.component"
 import AddSubject from "./components/add-subject.component"
+import AssignSubject from "./components/assign-subject.component"
 
 class App extends Component {
     render() {
@@ -31,6 +32,9 @@ class App extends Component {
                                 <li className="navbar-item">
                                     <Link to="/addSubject" className="nav-link">Add Subject</Link>
                                 </li>
+                                <li className="navbar-item">
+                                    <Link to="/assignSubject" className="nav-link">Assign Instructor</Link>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -41,6 +45,7 @@ class App extends Component {
                     <Route path="/currentCourse" component={CurrentCourse}/>
                     <Route path="/addInstructor" component={AddInstructor}/>
                     <Route path="/addSubject" component={AddSubject}/>
+                    <Route path="/assignSubject" component={AssignSubject}/>
                 </div>
             </Router>
         )

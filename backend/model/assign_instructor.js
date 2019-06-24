@@ -11,8 +11,7 @@ let AssignInstructor = new Schema({
         default: ''
     },
     instructorId: {
-        type: String,
-        default: ''
+        type: [{type:String}],
     }
 }, {
     collection : 'assignInstructor'
